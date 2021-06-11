@@ -24,9 +24,10 @@ void ParityNum(string binary)
 
     }
     string count = to_string(x);
-    cout << "Number of 1 in the number: " + count << endl;
+    cout << "Cantidad de 1s en el numero: " + count << endl;
 
-    cout<<"Parity of number "<<" = "<<(getParity(x)? "even": "odd")<<endl;
+    cout<<"La paridad del numero es "<<" = "<<(getParity(x)? "par": "impar")<<endl;
+    cout<< "El numero de paridad para agregar al codigo de mensaje es: " << (getParity(x)? "0":"1") <<endl;
 
 }
 
